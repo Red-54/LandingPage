@@ -1,0 +1,28 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	background-color: red;
+}
+
+.hero {
+	background-color: blue;
+}
+
+.Info {
+	background-color: green;
+}
+
+.CallToAction {
+	background-color: pink;
+}
+
+.QS {
+	background-color: yellow;
+}
+
+.Footer {
+	background-color: grey;
+}
