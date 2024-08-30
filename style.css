@@ -14,18 +14,18 @@ body {
 	background-color: #1F2937;
 }
 
-.CallToAction {
-	background-color: #3882F6;
-}
 
 .QS {
 	background-color: #E5E7EB;
+
 }
 
 .Footer {
 	background-color: #1F2937;
 	color: #E5E7EB;
 	font-size: 18px;
+	padding: 32px;
+	text-align: center;
 }
 
 .Logo {
@@ -124,23 +124,109 @@ button {
 	display: flex;
 	flex-direction: column;
 	padding: 3%;
-	gap: 2%;
+	gap: 10%;
+	padding-top: 5%;
+	padding-right: 5%;
 }
 
 .BigText {
 	align-self: center;
-
+	margin: auto;
+	margin-bottom: 48px;
 }
 
 .CardContainer {
-	align-self: center;
 	display: flex;
-	gap: 2%;
+	flex-wrap: wrap;
+	align-self: center;
+	gap: 48px;
+	justify-content: center;
+	align-items: center;
+}
+
+.Cards {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 150px;
 }
 
 .Box {
-	height: 150%;
-	flex-shrink: 150%;
+	box-sizing: border-box;
+	width: 150px;
+	height: 150px;
+	border: solid blue 5px;
 	border-radius: 10px;
-	border: solid royalblue 2px;
+}
+
+.QS {
+	display: flex;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	align-items: center;
+}
+
+.TheQuote {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-right: 20%;
+	gap: 16px;
+	padding-left: 20%;
+	font-weight: thin;
+}
+
+.From {
+	align-self: flex-end;
+}
+
+/*
+<div class="CallToAction">
+		<div class="Messenger">
+			<div class="MainMessage">
+				<div class="Message">Call to Action</div>
+				<div class="Subtext">This is some Subtext</div>
+			</div>
+			<button class="BigB">Sign Up</button>
+		</div>
+	</div>
+*/
+
+.CallToAction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+
+
+}
+
+.Messenger {
+	background-color: #3882F6;
+	display: flex;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	gap: 16px;
+	flex-grow: 1;
+	justify-content: space-around;
+	border-radius: 10px;
+}
+
+.Messenger>button {
+	border: solid white 2px;
+}
+
+.Message {
+	color: #E5E7EB;
+	font-size: 24px;
+	font-style: bold;
+	font-weight: 900;
+}
+
+.Subtext {
+	color: #E5E7EB;
+
 }
